@@ -1,0 +1,26 @@
+{
+  "name": "first_node_api",
+  "version": "1.0.0",
+  "description": "learning basic of node rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jindalAnuj/FirstNodeApi.git"
+  },
+  "keywords": [
+    "node",
+    "restapi"
+  ],
+  "author": "Anuj Jindal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jindalAnuj/FirstNodeApi/issues"
+  },
+  "homepage": "https://github.com/jindalAnuj/FirstNodeApi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
