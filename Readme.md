@@ -8,3 +8,4 @@
 - Bodyparser(Parse data of incoming request i.e post)
 - MongoDb Altas (Mongo Db Cloud 500mb free for larning)
 - Moongose (Node package to use MongoDb convinienty with node)
+- Multer (Like BodyParser but for form data)

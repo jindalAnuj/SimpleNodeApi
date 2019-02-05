@@ -4,6 +4,17 @@ const router = express.Router(); //register Route
 const Product = require('../models/product');
 
 const mongoose = require('mongoose');
+const multer = require('multer')
+const storage = multer.diskStorage({
+    destination: function(req,file,cb)
+    {
+        cb(null,'./uploads/');
+    },filename:function(req,file,cb){
+
+    cb(null,new Date().toLocaleTimeString + file.originalname)
+    }
+});
+const upload = multer({storage:storage});//folder path for multer to store images
 
 
 router.get('/', (req, res, next) => {
@@ -41,8 +52,9 @@ router.get('/', (req, res, next) => {
 });
 
 
-
-router.post("/", (req, res, next) => {
+//upload.single() is a multer object for a single file only
+router.post("/",upload.single('productImage'), (req, res, next) => {
+   console.log(req.file)
     const product = new Product({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
