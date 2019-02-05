@@ -144,12 +144,12 @@ router.delete('/:productId', (req, res, next) => {
             console.log('Hello' + result)
             res.status(200).json({
                 message: 'Product deleted',
-                requests:{
-                    type:'POST',
-                    url:'http://localhost:3000/products/',
-                    body:{
-                        name:'String',
-                        price:'Number'
+                requests: {
+                    type: 'POST',
+                    url: 'http://localhost:3000/products/',
+                    body: {
+                        name: 'String',
+                        price: 'Number'
                     }
                 }
                 // deleted:result
