@@ -9,3 +9,6 @@
 - MongoDb Altas (Mongo Db Cloud 500mb free for larning)
 - Moongose (Node package to use MongoDb convinienty with node)
 - Multer (Like BodyParser but for form data)
+- node.bcrypt.js (password hashing)
+    - if bcrypt does not work or gives error then try using [bcrypt.js](https://www.npmjs.com/package/bcryptjs) or 
+       bycrpt node.js
