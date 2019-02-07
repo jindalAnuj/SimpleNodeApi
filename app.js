@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const usersRoutes = require('./api/routes/users')
 
 
 const productRoutes = require('./api/routes/products');
@@ -41,8 +42,9 @@ app.use((req, res, next) => {
 
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
+app.use('/user', usersRoutes);
 
-//no rute here because want to recive ever error case
+//no route here because want to recive ever error case
 app.use((req, res, next) => {
     const error = new Error('Not Found');
     error.status = 404;

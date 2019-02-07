@@ -1,16 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
- 
-const User = require('../models/user');
-const bcrypt = require('bcryptjs')
+const UserController = require('../controllers/users');
 
 
-router.post('/signup',(req,res,next)=>{
-    const user = new User({
-_id:new mongoose.Types.ObjectId(),
-email:req.body.email,
-// password: ,
-    })
-})
+//get list of all users 
+router.get('/', UserController.get_all_user);
+
+//signup method 
+router.post('/signup', UserController.signup_user)
+
+//login request
+router.post("/login", UserController.login_user)
+
+//delete user by id
+router.delete('/:userId', UserController.delete_user)
+
 module.exports = router;
