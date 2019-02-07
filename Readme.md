@@ -12,3 +12,5 @@
 - node.bcrypt.js (password hashing)
     - if bcrypt does not work or gives error then try using [bcrypt.js](https://www.npmjs.com/package/bcryptjs) or 
        bycrpt node.js
+- jsonwebToken (Generate webtoken )  
+- [Jwt.io](https://jwt.io/) (to extract the token information)    
