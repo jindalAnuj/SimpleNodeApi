@@ -19,3 +19,6 @@
 # Learn Node 
 - [NodeSchool](https://nodeschool.io/)
 - [Youtube Playlist Series for Api](https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
+
+# General Tools
+- [Cmder](http://cmder.net) Linux terminal for windows
